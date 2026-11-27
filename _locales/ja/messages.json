@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "5ch 中華掲示板スタイル UI",
+    "description": "Extension name (Chrome Web Store, max 75 chars)"
+  },
+  "extDescription": {
+    "message": "非公式。5ch の全 10 種類のページを、すっきり読みやすい中国の掲示板風レイアウトに。中国語の UI にはローマ字で日本語の意味を併記。レス番号欄、引用ジャンプ、返信ツリー、広告除去、3 テーマ。",
+    "description": "Store summary (max 132 chars)"
+  },
+  "actionTitle": {
+    "message": "5ch 中華掲示板スタイル UI の設定",
+    "description": "Toolbar button tooltip"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "5ch 中文论坛风 UI 改造",
+    "description": "Extension name (Chrome Web Store, max 75 chars)"
+  },
+  "extDescription": {
+    "message": "非官方。把 5ch 全站 10 类页面改成精致极简的中文论坛阅读界面，中文界面带日文罗马字注音：楼层行号、引用直达、楼中楼、热榜整理、广告净化，三套主题。",
+    "description": "Store summary (max 132 chars)"
+  },
+  "actionTitle": {
+    "message": "5ch 中文论坛风 UI 设置",
+    "description": "Toolbar button tooltip"
+  }
+}

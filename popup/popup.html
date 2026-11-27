@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5ch 中文论坛风 UI 设置</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-root">
+    <header class="popup-header">
+      <div class="popup-brand">
+        <span class="popup-logo">5ch</span>
+        <div>
+          <div class="popup-title">5ch 中文论坛风 UI</div>
+          <div class="popup-sub">极简现代组件 · 广告净化</div>
+        </div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="opt-enabled" aria-label="总开关" checked>
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <section class="popup-section">
+      <div class="section-label">主题配色</div>
+      <div class="theme-grid" id="theme-grid">
+        <button type="button" class="theme-card is-active" data-theme="shadcn">
+          <span class="swatch swatch-shadcn"></span>
+          <span class="theme-name">极简白</span>
+          <span class="theme-desc">shadcn Zinc</span>
+        </button>
+        <button type="button" class="theme-card" data-theme="nga">
+          <span class="swatch swatch-nga"></span>
+          <span class="theme-name">羊皮纸</span>
+          <span class="theme-desc">护眼暖黄</span>
+        </button>
+        <button type="button" class="theme-card" data-theme="dark">
+          <span class="swatch swatch-dark"></span>
+          <span class="theme-name">极简黑</span>
+          <span class="theme-desc">Vercel Dark</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="popup-section">
+      <div class="section-label">增强功能</div>
+      <div class="opt-list">
+        <label class="opt-row">
+          <div>
+            <div class="opt-title">广告与遮挡弹窗净化</div>
+            <div class="opt-desc">隐藏侧栏、信息流与全屏广告</div>
+          </div>
+          <span class="switch">
+            <input type="checkbox" id="opt-blockAds" checked>
+            <span class="slider"></span>
+          </span>
+        </label>
+
+        <label class="opt-row">
+          <div>
+            <div class="opt-title">外链直达（跳过 jump.5ch）</div>
+            <div class="opt-desc">点击帖子外链直接打开目标网站</div>
+          </div>
+          <span class="switch">
+            <input type="checkbox" id="opt-unwrapJumpLinks" checked>
+            <span class="slider"></span>
+          </span>
+        </label>
+
+        <label class="opt-row">
+          <div>
+            <div class="opt-title">高清图片画廊与灯箱</div>
+            <div class="opt-desc">自动隐藏原版打码小方块，点击看大图</div>
+          </div>
+          <span class="switch">
+            <input type="checkbox" id="opt-inlineImages" checked>
+            <span class="slider"></span>
+          </span>
+        </label>
+
+        <label class="opt-row">
+          <div>
+            <div class="opt-title">紧凑阅读密度</div>
+            <div class="opt-desc">缩小楼层留白，一屏浏览更多回复</div>
+          </div>
+          <span class="switch">
+            <input type="checkbox" id="opt-compactMode">
+            <span class="slider"></span>
+          </span>
+        </label>
+      </div>
+    </section>
+
+    <footer class="popup-footer">
+      <a href="https://5ch.io/" target="_blank" rel="noopener">5ch 首页</a>
+      <span class="dot">·</span>
+      <a href="https://www2.5ch.io/5ch.html" target="_blank" rel="noopener">全站板块</a>
+      <span class="status-msg" id="status-msg">实时生效</span>
+    </footer>
+  </div>
+  <script src="../src/romaji.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "5ch中文风",
+  "version": "3.2.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "zh_CN",
+  "homepage_url": "https://github.com/Chrisutina/5ch-cn-forum-ui",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://5ch.io/*",
+        "https://*.5ch.io/*",
+        "http://5ch.io/*",
+        "http://*.5ch.io/*",
+        "https://5ch.net/*",
+        "https://*.5ch.net/*"
+      ],
+      "exclude_matches": [
+        "*://img.5ch.io/*",
+        "*://img.5ch.net/*",
+        "*://jump.5ch.io/*",
+        "*://jump.5ch.net/*",
+        "*://*.5ch.io/test/bbs.cgi*",
+        "*://*.5ch.net/test/bbs.cgi*"
+      ],
+      "js": [
+        "src/early-init.js"
+      ],
+      "css": [
+        "styles/theme.css",
+        "styles/pages.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://5ch.io/*",
+        "https://*.5ch.io/*",
+        "http://5ch.io/*",
+        "http://*.5ch.io/*",
+        "https://5ch.net/*",
+        "https://*.5ch.net/*"
+      ],
+      "exclude_matches": [
+        "*://img.5ch.io/*",
+        "*://img.5ch.net/*",
+        "*://jump.5ch.io/*",
+        "*://jump.5ch.net/*",
+        "*://*.5ch.io/test/bbs.cgi*",
+        "*://*.5ch.net/test/bbs.cgi*"
+      ],
+      "js": [
+        "src/config.js",
+        "src/romaji.js",
+        "src/dom-utils.js",
+        "src/components.js",
+        "src/pages/home.js",
+        "src/pages/discovery.js",
+        "src/pages/thread.js",
+        "src/pages/board-modern.js",
+        "src/pages/board-legacy.js",
+        "src/pages/subback.js",
+        "src/pages/kako.js",
+        "src/pages/categories.js",
+        "src/pages/directory.js",
+        "src/pages/search.js",
+        "src/main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

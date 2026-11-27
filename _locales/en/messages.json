@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "5ch Chinese Forum Style UI",
+    "description": "Extension name (Chrome Web Store, max 75 chars)"
+  },
+  "extDescription": {
+    "message": "Unofficial. Restyles 5ch into a clean Chinese-forum reading layout with romaji over the Chinese UI, reply trees and quote jumps.",
+    "description": "Store summary (max 132 chars)"
+  },
+  "actionTitle": {
+    "message": "5ch Chinese Forum Style UI settings",
+    "description": "Toolbar button tooltip"
+  }
+}

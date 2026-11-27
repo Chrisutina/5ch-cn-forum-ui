@@ -1,0 +1,4 @@
+# dev screenshots and packaged zips
+tools/shots/
+dist/
+node_modules/
